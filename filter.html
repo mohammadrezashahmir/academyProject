@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+  <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+  <title>آکادمی | فیلتر</title>
+</head>
+
+<body>
+  <header>
+    <div class="navbar-overlay navbar-re">
+      <nav class="row mx-1 gx-1 ">
+        <div class="col-lg-2 d-flex gap-4">
+          <div class="d-flex d-lg-none">
+            <input type="checkbox" class="checkbox-menu d-none" id="checkbox-menu">
+            <label for="checkbox-menu" class="navbar-toggle-btn"><i class="far fa-bars color-primary"></i></label>
+            <div class="nav-sm">
+              <div class="content pb-5">
+                <div class="header">
+                  <div class="text-center">
+                    <h6>Academy</h6>
+                    <p>مرجع معرفی رشته های علمی تخصصی دانشگاهی</p>
+                  </div>
+                  <div class="close">
+                    <label for="checkbox-menu">
+                      <i class="fa-light fa-circle-xmark fa-xl"></i>
+                    </label>
+                  </div>
+                </div>
+                <ul class="nav-links p-0">
+                  <li class="nav-link"><a href="#">خانه</a></li>
+                  <li class="nav-link"><a href="#">رشته ها</a></li>
+                  <li class="nav-link"><a href="#">درباره سایت</a></li>
+                  <li class="nav-link drop">
+                    <button class="bg-transparent custom-dropbtn" class-add-name='angle-up' type="button">
+                      مجموعه ها
+                    </button>
+                    <ul class="collapse sub-content">
+                      <li><a href="#">علوم ارتباطات</a></li>
+                      <li> <a href="#">علوم ارتباطات</a></li>
+                      <li> <a href="#">علوم ارتباطات</a></li>
+                      <li> <a href="#">علوم ارتباطات</a></li>
+                      <li> <a href="#">علوم ارتباطات</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-link"><a href="#">مقالات</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="site-brand">
+            <div class="text w-100">
+              <p class="color-primary mt-2 m-lg-0">Academy</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-link-items d-lg-flex d-none col-lg-7">
+          <ul class="d-flex gap-5 p-0 link-primary">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">خانه</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">رشته ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">درباره ی سایت</a>
+            </li>
+            <li class="nav-item nav-dropdown">
+              <div class="dropdown show">
+                <a class="nav-link dropdown-toggle" href="#" role="button" id="sets" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  مجموعه ها
+                </a>
+                <div class="dropdown-menu mt-2 rounded-4" aria-labelledby="sets">
+                  <a class="dropdown-item" href="#">علوم ارتباطات</a>
+                  <a class="dropdown-item" href="#">علوم ارتباطات</a>
+                  <a class="dropdown-item" href="#">علوم ارتباطات</a>
+                  <a class="dropdown-item" href="#">علوم ارتباطات</a>
+                  <a class="dropdown-item" href="#">علوم ارتباطات</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-0" href="#">مقالات</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-category col-lg-3 col-sm-4 col-6 text-end text-lg-center">
+          <div class="dropdown">
+            <button class="btn all-cat-btn w-100 bg-primary text-white rounded-5" type="button" data-toggle="dropdown"
+              aria-expanded="false">
+              همه ی دسته بندی ها
+            </button>
+            <div class="dropdown-menu mt-2 rounded-4" aria-labelledby="categories">
+              <div class="drop-item">
+                <button class=" show-sub-catergory-dropdown" type="button">
+                  <i class="far fa-graduation-cap"></i>
+                  علوم ارتباطات
+                </button>
+                <ul class=" sub-categories list-unstyled aria-labelledby=" sub-categories">
+                  <li><a href="#"> تاریخ</a></li>
+                  <li> <a href="#">فلسفه</a></li>
+                </ul>
+              </div>
+              <div class="drop-item">
+                <button class=" show-sub-catergory-dropdown" type="button">
+                  <i class="far fa-graduation-cap"></i>
+                  علوم ارتباطات
+                </button>
+                <ul class=" sub-categories list-unstyled aria-labelledby=" sub-categories">
+                  <li><a href="#"> تاریخ</a></li>
+                  <li> <a href="#">فلسفه</a></li>
+                </ul>
+              </div>
+              <div class="drop-item">
+                <button class=" show-sub-catergory-dropdown" type="button">
+                  <i class="far fa-graduation-cap"></i>
+                  علوم انسانی
+                </button>
+                <ul class=" sub-categories list-unstyled aria-labelledby=" sub-categories">
+                  <li><a href="#"> تاریخ</a></li>
+                  <li> <a href="#">فلسفه</a></li>
+                </ul>
+              </div>
+              <div class="drop-item">
+                <button class=" show-sub-catergory-dropdown" type="button">
+                  <i class="far fa-graduation-cap"></i>
+                  علوم ارتباطات
+                </button>
+                <ul class=" sub-categories list-unstyled aria-labelledby=" sub-categories">
+                  <li><a href="#"> تاریخ</a></li>
+                  <li> <a href="#">فلسفه</a></li>
+                </ul>
+              </div>
+              <div class="drop-item">
+                <button class=" show-sub-catergory-dropdown" type="button">
+                  <i class="far fa-graduation-cap"></i>
+                  علوم ارتباطات
+                </button>
+                <ul class=" sub-categories list-unstyled aria-labelledby=" sub-categories">
+                  <li><a href="#"> تاریخ</a></li>
+                  <li> <a href="#">فلسفه</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="banner bg-white">
+      <div class="banner-image w-100">
+        <img src="img/banner-img.png" class="" alt="">
+      </div>
+      <div class="banner-text col-10 col-lg-8 col-xxl-6">
+        <header class="text-center">
+          <h4>مجموعه ای با بیش از صد رشته متنوع در حوزه های مختلف علوم</h4>
+          <p class="my-4">تلاشی در راستای معرفی نظام مند با تاکید بر تنوع دیدگاه ها</p>
+        </header>
+        <form action="#" class="row g-3 my-3">
+          <div class="col-12 col-sm-8 col-md-5 order-last order-md-0">
+            <select class="form-select form-select-lg form-control">
+              <option selected>رشته مورد نظر خود را انتخاب کنید</option>
+              <option value="1">ریاضی فیزیک</option>
+              <option value="2">سیاست</option>
+              <option value="3">تاریخ</option>
+            </select>
+          </div>
+          <div class="col-8 col-sm-9 col-md-5">
+            <input type="email" class="form-control form-control-lg" placeholder="مطلب خود را جست و جو نمایید">
+          </div>
+          <div class="col-4 col-sm-3 col-md-2">
+            <button class="btn rounded-3 form-control form-control-lg w-100 h-100" type="submit">جست و جو</button>
+          </div>
+        </form>
+        <div class="keys">
+          <ul class="d-flex gap-2 flex-wrap mb-0">
+            <div>
+              کلید واژه های منتخب:
+            </div>
+            <li class="active">#علوم اقتصادی</li>
+            <li>#علم سنجی</li>
+            <li>#روش کیفی</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="blogs my-5 mx-3 mx-md-5">
+      <main class="row">
+        <div class="col-lg-9">
+          <header class="row justify-content-between g-3 f-IranYekan ">
+            <div class="col-sm-2 d-flex">
+              <button class="filter-btn btn text-white" type="button" data-bs-toggle="modal"
+                data-bs-target="#filter-content">فیلترها</button>
+              <div class="modal fade" id="filter-content" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="mx-4 mt-4">
+                      <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="far fa-xmark"></i>
+                      </button>
+                    </div>
+                    <div class="modal-body p-0">
+                      <div>
+                        <h1 class="modal-title fs-5 text-center">فیلتر ها</h1>
+                      </div>
+                      <div class="col-10 my-4 mx-auto d-flex filter-options py-3 flex-wrap gap-3 px-2">
+                        <form action="#" class="w-100 my-auto">
+                          <div>
+                            <header class="fw-bold fs-6">نوع مطلب:</header>
+                            <div class="d-flex flex-wrap my-3">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check1">
+                                <label class="form-check-label" for="check1">
+                                  تحلیلی
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check2">
+                                <label class="form-check-label" for="check2">
+                                  توصیفی
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check3">
+                                <label class="form-check-label" for="check3">
+                                  تحلیلی
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <header class="fw-bold fs-6">دسته بندی رشته ها:</header>
+                            <div class="d-flex flex-wrap my-3">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check3">
+                                <label class="form-check-label" for="check3">
+                                  علوم طبیعی
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check4">
+                                <label class="form-check-label" for="check4">
+                                  علوم انسانی
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="w-100 text-center">
+                            <button type="submit" class="btn w-75">اعمال فیلترها</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <button class="cat-btn d-block d-md-none">دسته بندی ها</button> -->
+            </div>
+            <div class="col-sm-auto">
+              <div class="row g-3 justify-content-between">
+                <div class="col-auto">
+                  <span class="count">15 دوره پیدا شد</span>
+                </div>
+                <div class="col-auto d-flex">
+                  <div>
+                    <label for="sort-by-input" class="form-label">مرتب سازی:</label>
+                  </div>
+                  <div>
+                    <select id="sort-by-input" class="form-select form-select-sm ">
+                      <option selected>جدیدترین</option>
+                      <option>محبوب ترین</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex filter-chosen py-3 flex-wrap gap-3 px-2">
+              <ul class="d-flex gap-2 my-auto flex-wrap ">
+                <header class="my-2">
+                  <span>نوع مطلب:</span>
+                </header>
+                <li>تحلیلی</li>
+                <li>توصیفی</li>
+              </ul>
+              <ul class="d-flex gap-2 my-auto flex-wrap">
+                <header class="my-2">
+                  <span>رشته ها:</span>
+                </header>
+                <li>جامعه شناسی</li>
+                <li>روانشناسی</li>
+                <li>علوم سیاسی</li>
+              </ul>
+            </div>
+          </header>
+          <div class="row g-3 mt-4 mb-5">
+            <div class="col-sm-6 col-lg-4">
+              <a class="blog-item" href="#">
+                <div class="mx-auto spacing">
+                  <header class="my-4">
+                    <div class="title">
+                      <i class="fa-light fa-graduation-cap"></i>
+                      <text class="fs-5">علوم ارتباطات</text>
+                    </div>
+                  </header>
+                  <div class="image ">
+                    <img src="img/blog-img-1.png" class="img-fluid" alt="blog image">
+                  </div>
+                  <div class="title my-4">
+                    <p>پراستنادترین مقالات سال 2023 کدام بودند؟</p>
+                  </div>
+                  <div class="tags-change-bg">
+                    <ul class="d-flex flex-wrap p-0 gap-3">
+                      <li>علم سنجی</li>
+                      <li>روش کمی</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <a class="blog-item" href="#">
+                <div class="mx-auto spacing">
+                  <header class="my-4">
+                    <div class="title">
+                      <i class="fa-light fa-graduation-cap"></i>
+                      <text class="fs-5">علوم ارتباطات</text>
+                    </div>
+                  </header>
+                  <div class="image ">
+                    <img src="img/blog-img-1.png" class="img-fluid" alt="blog image">
+                  </div>
+                  <div class="title my-4">
+                    <p>پراستنادترین مقالات سال 2023 کدام بودند؟</p>
+                  </div>
+                  <div class="tags-change-bg">
+                    <ul class="d-flex flex-wrap p-0 gap-3">
+                      <li>علم سنجی</li>
+                      <li>روش کمی</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <a class="blog-item" href="#">
+                <div class="mx-auto spacing">
+                  <header class="my-4">
+                    <div class="title">
+                      <i class="fa-light fa-graduation-cap"></i>
+                      <text class="fs-5">علوم ارتباطات</text>
+                    </div>
+                  </header>
+                  <div class="image ">
+                    <img src="img/blog-img-1.png" class="img-fluid" alt="blog image">
+                  </div>
+                  <div class="title my-4">
+                    <p>پراستنادترین مقالات سال 2023 کدام بودند؟</p>
+                  </div>
+                  <div class="tags-change-bg">
+                    <ul class="d-flex flex-wrap p-0 gap-3">
+                      <li>علم سنجی</li>
+                      <li>روش کمی</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <a class="blog-item" href="#">
+                <div class="mx-auto spacing">
+                  <header class="my-4">
+                    <div class="title">
+                      <i class="fa-light fa-graduation-cap"></i>
+                      <text class="fs-5">علوم ارتباطات</text>
+                    </div>
+                  </header>
+                  <div class="image ">
+                    <img src="img/blog-img-1.png" class="img-fluid" alt="blog image">
+                  </div>
+                  <div class="title my-4">
+                    <p>پراستنادترین مقالات سال 2023 کدام بودند؟</p>
+                  </div>
+                  <div class="tags-change-bg">
+                    <ul class="d-flex flex-wrap p-0 gap-3">
+                      <li>علم سنجی</li>
+                      <li>روش کمی</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <a class="blog-item" href="#">
+                <div class="mx-auto spacing">
+                  <header class="my-4">
+                    <div class="title">
+                      <i class="fa-light fa-graduation-cap"></i>
+                      <text class="fs-5">علوم ارتباطات</text>
+                    </div>
+                  </header>
+                  <div class="image ">
+                    <img src="img/blog-img-1.png" class="img-fluid" alt="blog image">
+                  </div>
+                  <div class="title my-4">
+                    <p>پراستنادترین مقالات سال 2023 کدام بودند؟</p>
+                  </div>
+                  <div class="tags-change-bg">
+                    <ul class="d-flex flex-wrap p-0 gap-3">
+                      <li>علم سنجی</li>
+                      <li>روش کمی</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <a class="blog-item" href="#">
+                <div class="mx-auto spacing">
+                  <header class="my-4">
+                    <div class="title">
+                      <i class="fa-light fa-graduation-cap"></i>
+                      <text class="fs-5">علوم ارتباطات</text>
+                    </div>
+                  </header>
+                  <div class="image ">
+                    <img src="img/blog-img-1.png" class="img-fluid" alt="blog image">
+                  </div>
+                  <div class="title my-4">
+                    <p>پراستنادترین مقالات سال 2023 کدام بودند؟</p>
+                  </div>
+                  <div class="tags-change-bg">
+                    <ul class="d-flex flex-wrap p-0 gap-3">
+                      <li>علم سنجی</li>
+                      <li>روش کمی</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <a class="blog-item" href="#">
+                <div class="mx-auto spacing">
+                  <header class="my-4">
+                    <div class="title">
+                      <i class="fa-light fa-graduation-cap"></i>
+                      <text class="fs-5">علوم ارتباطات</text>
+                    </div>
+                  </header>
+                  <div class="image ">
+                    <img src="img/blog-img-1.png" class="img-fluid" alt="blog image">
+                  </div>
+                  <div class="title my-4">
+                    <p>پراستنادترین مقالات سال 2023 کدام بودند؟</p>
+                  </div>
+                  <div class="tags-change-bg">
+                    <ul class="d-flex flex-wrap p-0 gap-3">
+                      <li>علم سنجی</li>
+                      <li>روش کمی</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <a class="blog-item" href="#">
+                <div class="mx-auto spacing">
+                  <header class="my-4">
+                    <div class="title">
+                      <i class="fa-light fa-graduation-cap"></i>
+                      <text class="fs-5">علوم ارتباطات</text>
+                    </div>
+                  </header>
+                  <div class="image ">
+                    <img src="img/blog-img-1.png" class="img-fluid" alt="blog image">
+                  </div>
+                  <div class="title my-4">
+                    <p>پراستنادترین مقالات سال 2023 کدام بودند؟</p>
+                  </div>
+                  <div class="tags-change-bg">
+                    <ul class="d-flex flex-wrap p-0 gap-3">
+                      <li>علم سنجی</li>
+                      <li>روش کمی</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <nav class="my-4">
+            <ul class="page d-flex justify-content-center list-unstyled">
+              <li class="page-btn disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <i class="fa-light fa-chevron-right"></i>
+                </a>
+              </li>
+              <ul class="numbers d-flex mx-4 gap-3 ">
+                <li class="page-item active"><a class="page-link " href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+              </ul>
+              <li class="page-btn">
+                <a class="page-link" href="#" aria-label="Next">
+                  <i class="fa-light fa-chevron-left"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-10 col-md-8 mx-auto col-lg-3 category-section">
+          <header class="my-4 mx-2">
+            <h6 class="text-black fw-light">دسته بندی ها</h6>
+          </header>
+          <div class="row my-5 justify-content-center">
+            <div class="col-sm-8 col-lg-12">
+              <div class="box">
+                <div class="line-first">
+                </div>
+                <div class="line-second">
+                </div>
+                <div class="red-line">
+                </div>
+                <div class="image">
+                  <img src="img/sets-img-2.png" class="img-fluid w-100" alt="">
+                </div>
+                <div class="text">
+                  محل قرارگیری نام مجموعه قرار گیرد
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-lg-12">
+              <div class="box">
+                <div class="line-first">
+                </div>
+                <div class="line-second">
+                </div>
+                <div class="red-line">
+                </div>
+                <div class="image">
+                  <img src="img/sets-img-2.png" class="img-fluid w-100" alt="">
+                </div>
+                <div class="text">
+                  محل قرارگیری نام مجموعه قرار گیرد
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-lg-12">
+              <div class="box">
+                <div class="line-first">
+                </div>
+                <div class="line-second">
+                </div>
+                <div class="red-line">
+                </div>
+                <div class="image">
+                  <img src="img/sets-img-2.png" class="img-fluid w-100" alt="">
+                </div>
+                <div class="text">
+                  محل قرارگیری نام مجموعه قرار گیرد
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-lg-12">
+              <div class="box">
+                <div class="line-first">
+                </div>
+                <div class="line-second">
+                </div>
+                <div class="red-line">
+                </div>
+                <div class="image">
+                  <img src="img/sets-img-2.png" class="img-fluid w-100" alt="">
+                </div>
+                <div class="text">
+                  محل قرارگیری نام مجموعه قرار گیرد
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <header class="second col-10" >
+      <div class="row gy-3 px-3">
+        <div class="image mx-auto mx-md-0 col-8 col-md-5 col-lg-4 order-last order-md-0">
+          <img src="img/person-reading.png" class="img-fluid" alt="footer image">
+        </div>
+        <div class="text-white  col-10 col-md-6 col-lg-5 fw-bold mx-auto mx-lg-0">
+          <h5 class="lh-lg fw-bold">
+            آیا میدانستید؟
+          </h5>
+          <p class="f-IranYekan">در رشته سیاست گذاری عمومی این مراحل بیانگر اقدامات جاری هستند که طی زمان به
+            وقوع میپیوندند. هر مرحلهای به مرحله بعد مرتبط بوده و آخرین مرحله )برآورد
+            سیاست( نیز به مرحله اول )تهیه دستور کار( و مراحل میانی متصل است که نوع این
+            ارتباط به صورت یک چرخه یا دور غیر خطی از اقدامات است.</p>
+        </div>
+      </div>
+    </header>
+    <div class="px-4 gy-4 row content">
+      <aside class="d-inline-block col-12 col-sm-5 col-md-5 col-lg-3">
+        <h6 class="lh-base fw-bold">
+          مرجع معرفی
+          <br>
+          رشته های علمی تخصصی دانشگاهی
+        </h6>
+        <div class="my-4">
+          <p>
+            گردآوری منابع تخصصی در مجموعه ای از
+            رشته ها به صورت یک جا،
+            هدفی است که در این
+            سایت به دنبال تحقق آن هستیم
+          </p>
+        </div>
+      </aside>
+      <div class="links col-12 col-sm-7 col-md-7 col-lg-5">
+        <ul class="d-flex gap-5  flex-wrap px-0">
+          <li>
+            <div class="header">
+              <h6 class="fw-bold text-white">لیست رشته ها</h6>
+            </div>
+            <a href="#">علوم طبیعی</a>
+            <a href="#">علوم انسانی</a>
+            <a href="#">هنر و ادبیات</a>
+            <a href="#">فنی و مهندسی</a>
+          </li>
+          <li>
+            <div class="header">
+              <h6 class="fw-bold text-white">درباره سایت</h6>
+            </div>
+            <a href="#">اهداف</a>
+            <a href="#">رویکردها</a>
+            <a href="#">چشم انداز</a>
+            <a href="#">حمایت از ما</a>
+          </li>
+        </ul>
+      </div>
+      <div class="email-section col-12  col-lg-4  d-flex justify-content-end">
+        <div>
+          <p class="text-center">جهت دریافت آخرین به روز رسانی و مطالب
+            جدید سایت، ایمیل خود را وارد کنید</p>
+          <div class="mb-3 d-flex gap-2">
+            <input type="email" class="form-control flex-grow-1" placeholder="ایمیل خود را وارد کنید">
+            <button class="btn rounded-3 w-25" class="form-control" type="button">تایید</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 text-white d-none d-md-flex align-items-center justify-content-center f-paragraf">
+      <p>گردآوری منابع تخصصی در مجموعه ای از
+        رشته ها به صورت یک جا،
+      </p>
+    </div>
+  </footer>
+  <!-- node modules js: -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- modules js: -->
+  <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="lib/horizontal-timeline-2.0-master/JavaScript/horizontal_timeline.2.0_v2.0.5.3.min.js"></script>
+  <script src="lib/persian-numbers-jquery-plugin-master/persianNum.jquery-2.min.js"></script>
+  <script src="lib/slick-1.8.1/slick/slick.min.js"></script>
+  <!-- custom js: -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

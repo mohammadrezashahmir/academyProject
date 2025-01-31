@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="lib/horizontal-timeline-2.0-master/css/horizontal_timeline.2.0_v2.0.5.2.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>آکادمی | لندینگ</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-overlay navbar-re">
+            <nav class="row mx-1 gx-1 ">
+              <div class="col-lg-2 d-flex gap-4">
+                <div class="d-flex d-lg-none">
+                  <input type="checkbox" class="checkbox-menu d-none" id="checkbox-menu">
+                  <label for="checkbox-menu" class="navbar-toggle-btn"><i class="far fa-bars color-primary"></i></label>
+                  <div class="nav-sm">
+                    <div class="content pb-5">
+                      <div class="header">
+                        <div class="text-center">
+                          <h6>Academy</h6>
+                          <p>مرجع معرفی رشته های علمی تخصصی دانشگاهی</p>
+                        </div>
+                        <div class="close">
+                          <label for="checkbox-menu">
+                            <i class="fa-light fa-circle-xmark fa-xl"></i>
+                          </label>
+                        </div>
+                      </div>
+                      <ul class="nav-links p-0">
+                        <li class="nav-link"><a href="#">خانه</a></li>
+                        <li class="nav-link"><a href="#">رشته ها</a></li>
+                        <li class="nav-link"><a href="#">درباره سایت</a></li>
+                        <li class="nav-link drop">
+                          <button class="bg-transparent custom-dropbtn" class-add-name='angle-up' type="button">
+                            مجموعه ها
+                          </button>
+                          <ul class="collapse sub-content">
+                            <li><a href="#">علوم ارتباطات</a></li>
+                            <li> <a href="#">علوم ارتباطات</a></li>
+                            <li> <a href="#">علوم ارتباطات</a></li>
+                            <li> <a href="#">علوم ارتباطات</a></li>
+                            <li> <a href="#">علوم ارتباطات</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-link"><a href="#">مقالات</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="site-brand">
+                  <div class="text w-100">
+                    <p class="color-primary mt-2 m-lg-0">Academy</p>
+                  </div>
+                </div>
+              </div>
+              <div class="nav-link-items d-lg-flex d-none col-lg-7">
+                <ul class="d-flex gap-5 p-0 link-primary">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">خانه</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">رشته ها</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">درباره ی سایت</a>
+                  </li>
+                  <li class="nav-item nav-dropdown">
+                    <div class="dropdown show">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" id="sets" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        مجموعه ها
+                      </a>
+                      <div class="dropdown-menu mt-2 rounded-4" aria-labelledby="sets">
+                        <a class="dropdown-item" href="#">علوم ارتباطات</a>
+                        <a class="dropdown-item" href="#">علوم ارتباطات</a>
+                        <a class="dropdown-item" href="#">علوم ارتباطات</a>
+                        <a class="dropdown-item" href="#">علوم ارتباطات</a>
+                        <a class="dropdown-item" href="#">علوم ارتباطات</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link m-0" href="#">مقالات</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-category col-lg-3 col-sm-4 col-6 text-end text-lg-center">
+                <div class="dropdown">
+                  <button class="btn all-cat-btn w-100 bg-primary text-white rounded-5" type="button" data-toggle="dropdown"
+                    aria-expanded="false">
+                    همه ی دسته بندی ها
+                  </button>
+                  <div class="dropdown-menu mt-2 rounded-4" aria-labelledby="categories">
+                    <div class="drop-item">
+                      <button class=" show-sub-catergory-dropdown" type="button">
+                        <i class="far fa-graduation-cap"></i>
+                        علوم ارتباطات
+                      </button>
+                      <ul class=" sub-categories list-unstyled aria-labelledby=" sub-categories">
+                        <li><a href="#"> تاریخ</a></li>
+                        <li> <a href="#">فلسفه</a></li>
+                      </ul>
+                    </div>
+                    <div class="drop-item">
+                      <button class=" show-sub-catergory-dropdown" type="button">
+                        <i class="far fa-graduation-cap"></i>
+                        علوم ارتباطات
+                      </button>
+                      <ul class=" sub-categories list-unstyled aria-labelledby=" sub-categories">
+                        <li><a href="#"> تاریخ</a></li>
+                        <li> <a href="#">فلسفه</a></li>
+                      </ul>
+                    </div>
+                    <div class="drop-item">
+                      <button class=" show-sub-catergory-dropdown" type="button">
+                        <i class="far fa-graduation-cap"></i>
+                        علوم انسانی
+                      </button>
+                      <ul class=" sub-categories list-unstyled aria-labelledby=" sub-categories">
+                        <li><a href="#"> تاریخ</a></li>
+                        <li> <a href="#">فلسفه</a></li>
+                      </ul>
+                    </div>
+                    <div class="drop-item">
+                      <button class=" show-sub-catergory-dropdown" type="button">
+                        <i class="far fa-graduation-cap"></i>
+                        علوم ارتباطات
+                      </button>
+                      <ul class=" sub-categories list-unstyled aria-labelledby=" sub-categories">
+                        <li><a href="#"> تاریخ</a></li>
+                        <li> <a href="#">فلسفه</a></li>
+                      </ul>
+                    </div>
+                    <div class="drop-item">
+                      <button class=" show-sub-catergory-dropdown" type="button">
+                        <i class="far fa-graduation-cap"></i>
+                        علوم ارتباطات
+                      </button>
+                      <ul class=" sub-categories list-unstyled aria-labelledby=" sub-categories">
+                        <li><a href="#"> تاریخ</a></li>
+                        <li> <a href="#">فلسفه</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        <div class="banner-second mx-3 mx-md-5 rounded-5">
+            <img src="img/banner-img-2.png" class="rounded-5 w-100 h-100" alt="">
+            <div class="text w-100">
+                <header class="text-center ps-4">
+                    <h5 class="fw-bold lh-lg">
+                        علوم سیاسی
+                        <br>
+                        political science
+                    </h5>
+                </header>
+            </div>
+        </div>
+    </header>
+    <main class=" mx-3 mx-lg-5">
+        <section class="field-description">
+            <div class="row my-5 gy-3">
+                <div class="col-lg-9">
+                    <div class="item">
+                        <header class="border-bottom">
+                            <h6 class="title">
+                                <i class="fa-light fa-list-check mxe-2"></i>
+                                محل قرارگیری عنوان
+                            </h6>
+                        </header>
+                        <main>
+                            <div class="f-IranYekan my-4">
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                    کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+                                    طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+                                    خلاقی، و
+                                    فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                                    موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                    حروفچینی
+                                    دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+                                    قرار
+                                    گیرد.
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                    متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                                    الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+                                    داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان
+                                    مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
+                                    طراحی اساسا مورد استفاده قرار گیرد.
+                                </p>
+                            </div>
+                        </main>
+                    </div>
+                    <div class="item">
+                        <header class="border-bottom">
+                            <h6 class="title">
+                                <i class="fa-light fa-list-check mxe-2"></i>
+                                محل قرارگیری عنوان
+                            </h6>
+                        </header>
+                        <main class="f-IranYekan">
+                            <div class="my-4">
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                    کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+                                    طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+                                    خلاقی، و
+                                    فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                                    موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                    حروفچینی
+                                    دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+                                    قرار
+                                    گیرد.
+                                </p>
+                            </div>
+                            <div class="options row">
+                                <ul class="col-md-6">
+                                    <li>لورم ایپسوم متن ساختگی با تولید سادگی</li>
+                                    <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</li>
+                                    <li>لورم ایپسوم </li>
+                                    <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</li>
+                                </ul>
+                                <ul class="col-md-6">
+                                    <li>لورم ایپسوم متن ساختگی با تولید سادگی</li>
+                                    <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</li>
+                                    <li>لورم ایپسوم </li>
+                                    <li>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</li>
+                                </ul>
+                            </div>
+                        </main>
+                    </div>
+                    <div class="item">
+                        <header class="border-bottom">
+                            <h6 class="title">
+                                <i class="fa-light fa-list-check mxe-2"></i>
+                                محل قرارگیری عنوان
+                            </h6>
+                        </header>
+                        <main class="f-IranYekan">
+                            <div class="my-4">
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                                </p>
+                            </div>
+                            <div class="image col-12 text-center">
+                                <img src="img/english-img.png" class="w-100" alt="">
+                            </div>
+                        </main>
+                    </div>
+                    <div class="item">
+                        <header class="border-bottom">
+                            <h6 class="title">
+                                <i class="fa-light fa-list-check mxe-2"></i>
+                                محل قرارگیری عنوان
+                            </h6>
+                        </header>
+                        <main class="f-IranYekan">
+                            <div class="my-4">
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون
+                                </p>
+                            </div>
+                            <div class="horizontal-timeline rounded-4 py-5" id="field-history-timeline" dir="ltr">
+                                <div class="events-content">
+                                    <ol class="text-white">
+                                        <li class="selected  bg-transparent text-start fs-6"
+                                            data-horizontal-timeline='{"date": "1/12/1943","customDisplay": "سپتامبر 1943"}'>
+                                            <div>
+                                                <header class="mb-4">
+                                                    <h4>ورود رشته به دانشگاه های سطح اول</h4>
+                                                </header>
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                                    استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                                                    ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                                                    و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                                                    زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                                    متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                                                    رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                                                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات </p>
+                                            </div>
+                                        </li>
+                                        <li class="bg-transparent text-start fs-6"
+                                            data-horizontal-timeline='{"date": "1/12/1978", "customDisplay": "سپتامبر 1978"}'>
+                                            <div>
+                                                <header class="mb-4">
+                                                    <h4>ورود رشته به دانشگاه های سطح اول</h4>
+                                                </header>
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                                    استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                                                    ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                                                    و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                                                    زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                                    متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                                                    رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                                                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات </p>
+                                            </div>
+                                        </li>
+                                        <li class="bg-transparent text-start fs-6"
+                                            data-horizontal-timeline='{"date": "1/12/1994", "customDisplay": "سپتامبر 1994"}'>
+                                            <div>
+                                                <header class="mb-4">
+                                                    <h4>ورود رشته به دانشگاه های سطح اول</h4>
+                                                </header>
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                                    استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                                                    ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                                                    و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                                                    زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                                    متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                                                    رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                                                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات </p>
+                                            </div>
+                                        </li>
+                                        <li class="bg-transparent text-start fs-6"
+                                            data-horizontal-timeline='{"date": "1/12/2004", "customDisplay": "سپتامبر 2004"}'>
+                                            <div>
+                                                <header class="mb-4">
+                                                    <h4>ورود رشته به دانشگاه های سطح اول</h4>
+                                                </header>
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                                    استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                                                    ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                                                    و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                                                    زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                                    متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                                                    رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                                                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات </p>
+                                            </div>
+                                        </li>
+                                        <li class="bg-transparent text-start fs-6"
+                                            data-horizontal-timeline='{"date": "1/12/2011", "customDisplay": "سپتامبر 2011"}'>
+                                            <div>
+                                                <header class="mb-4">
+                                                    <h4>ورود رشته به دانشگاه های سطح اول</h4>
+                                                </header>
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                                    استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                                                    ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                                                    و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                                                    زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                                    متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                                                    رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                                                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات </p>
+                                            </div>
+                                        </li>
+                                        <li class="bg-transparent text-start fs-6"
+                                            data-horizontal-timeline='{"date": "1/12/2024", "customDisplay": "سپتامبر 2024"}'>
+                                            <div>
+                                                <header class="mb-4">
+                                                    <h4>ورود رشته به دانشگاه های سطح اول</h4>
+                                                </header>
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                                                    استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                                                    ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
+                                                    و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+                                                    زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+                                                    متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
+                                                    رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                                                    کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                                                    راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                                    حروفچینی دستاوردهای اصلی، و جوابگوی سوالات </p>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+                <div class="order-first order-lg-0 col-sm-8 col-lg-3 f-IranYekan">
+                    <div class="field-link accordion" id="field-link">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header ">
+                                <button class="accordion-button collapsed gap-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#content-1">
+                                    <i class="fal fa-book"></i>
+                                    نگاهی به رشته
+                                </button>
+                            </h2>
+                            <div id="content-1" class="accordion-collapse collapse" data-bs-parent="#field-link">
+                                <div class="accordion-body">
+                                    <ul class="">
+                                        <li>تعاریف</li>
+                                        <li>گرایش ها</li>
+                                        <li>گسترش دانشگاهی</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header ">
+                                <button class="accordion-button collapsed gap-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#content-2">
+                                    <i class="fal fa-search"></i>
+                                    منابع
+                                </button>
+                            </h2>
+                            <div id="content-2" class="accordion-collapse collapse" data-bs-parent="#field-link">
+                                <div class="accordion-body">
+                                    <ul class="">
+                                        <li>تعاریف</li>
+                                        <li>گرایش ها</li>
+                                        <li>گسترش دانشگاهی</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header ">
+                                <button class="accordion-button collapsed gap-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#content-3">
+                                    <i class="fal fa-building"></i>
+                                    نهادها
+                                </button>
+                            </h2>
+                            <div id="content-3" class="accordion-collapse collapse" data-bs-parent="#field-link">
+                                <div class="accordion-body">
+                                    <ul class="">
+                                        <li>تعاریف</li>
+                                        <li>گرایش ها</li>
+                                        <li>گسترش دانشگاهی</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header ">
+                                <button class="accordion-button collapsed gap-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#content-4">
+                                    <i class="fa-light fa-calendar-days"></i>
+                                    برنامه های درسی
+                                </button>
+                            </h2>
+                            <div id="content-4" class="accordion-collapse collapse" data-bs-parent="#field-link">
+                                <div class="accordion-body ">
+                                    <ul class="">
+                                        <li>تعاریف</li>
+                                        <li>گرایش ها</li>
+                                        <li>گسترش دانشگاهی</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <header class="second col-11">
+            <div class="row gy-3 px-3">
+                <div class="image mx-auto mx-md-0 col-8 col-md-5 col-lg-4 order-last order-md-0">
+                  <img src="img/person-reading.png" class="img-fluid" alt="footer image">
+                </div>
+                <div class="text-white  col-10 col-md-6 col-lg-5 fw-bold mx-auto mx-lg-0">
+                  <h5 class="lh-lg fw-bold">
+                    آیا میدانستید؟
+                  </h5>
+                  <p class="f-IranYekan">در رشته سیاست گذاری عمومی این مراحل بیانگر اقدامات جاری هستند که طی زمان به
+                    وقوع میپیوندند. هر مرحلهای به مرحله بعد مرتبط بوده و آخرین مرحله )برآورد
+                    سیاست( نیز به مرحله اول )تهیه دستور کار( و مراحل میانی متصل است که نوع این
+                    ارتباط به صورت یک چرخه یا دور غیر خطی از اقدامات است.</p>
+                </div>
+              </div>
+        </header>
+        <div class="px-4 gy-4 row content">
+            <aside class="d-inline-block col-12 col-sm-5 col-md-5 col-lg-3">
+                <h6 class="lh-base fw-bold">
+                    مرجع معرفی
+                    <br>
+                    رشته های علمی تخصصی دانشگاهی
+                </h6>
+                <div class="my-4">
+                    <p>
+                        گردآوری منابع تخصصی در مجموعه ای از
+                        رشته ها به صورت یک جا،
+                        هدفی است که در این
+                        سایت به دنبال تحقق آن هستیم
+                    </p>
+                </div>
+            </aside>
+            <div class="links col-12 col-sm-7 col-md-7 col-lg-5">
+                <ul class="d-flex gap-5  flex-wrap px-0">
+                    <li>
+                        <div class="header">
+                            <h6 class="fw-bold text-white">لیست رشته ها</h6>
+                        </div>
+                        <a href="#">علوم طبیعی</a>
+                        <a href="#">علوم انسانی</a>
+                        <a href="#">هنر و ادبیات</a>
+                        <a href="#">فنی و مهندسی</a>
+                    </li>
+                    <li>
+                        <div class="header">
+                            <h6 class="fw-bold text-white">درباره سایت</h6>
+                        </div>
+                        <a href="#">اهداف</a>
+                        <a href="#">رویکردها</a>
+                        <a href="#">چشم انداز</a>
+                        <a href="#">حمایت از ما</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="email-section col-12  col-lg-4  d-flex justify-content-end">
+                <div>
+                    <p class="text-center">جهت دریافت آخرین به روز رسانی و مطالب
+                        جدید سایت، ایمیل خود را وارد کنید</p>
+                    <div class="mb-3 d-flex gap-2">
+                        <input type="email" class="form-control flex-grow-1" placeholder="ایمیل خود را وارد کنید">
+                        <button class="btn rounded-3 w-25" class="form-control" type="button">تایید</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 text-white d-none d-md-flex align-items-center justify-content-center f-paragraf">
+            <p>گردآوری منابع تخصصی در مجموعه ای از
+                رشته ها به صورت یک جا،
+            </p>
+        </div>
+    </footer>
+    <!-- node modules js: -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- modules js: -->
+    <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="lib/horizontal-timeline-2.0-master/JavaScript/horizontal_timeline.2.0_v2.0.5.3.min.js"></script>
+    <script src="lib/persian-numbers-jquery-plugin-master/persianNum.jquery-2.min.js"></script>
+    <script src="lib/slick-1.8.1/slick/slick.min.js"></script>
+    <!-- custom js: -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
