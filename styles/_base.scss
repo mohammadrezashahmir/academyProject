@@ -1,0 +1,381 @@
+@use "sass:map";
+
+@font-face {
+    font-family: 'Estedad';
+    src: url('../fonts/estedad/ttf/Estedad-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'IranYekan';
+    src: url('../fonts/Yekan/Yekan.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/Yekan/Yekan.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/Yekan/Yekan.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('../fonts/Yekan/Yekan.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/Yekan/Yekan.otf') format('opentype'),
+        /* Open Type Font */
+        url('../fonts/Yekan/Yekan.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'DanaFaNum';
+    src: url("../fonts/dana-fanum/dana-fanum\ regular.ttf");
+}
+
+$red: #FF2D30;
+$primary: #101336;
+$dark-blue: #232F43;
+$white: var(--bs-white);
+$gray-red: #FDFAF3;
+$angle : #292D32;
+$gray: #E0E0E2;
+$blue-gray: #434C5D;
+$cyan: #02C5BD;
+$light: #FBFBFB;
+$grayer: #626A78;
+$white-custom: #EAEAEB;
+$lighter: #F2FCFD;
+$light-pink: #FCEEBD;
+$yellow: #FACB01;
+$blue-black: #000929;
+$grid-breakpoints: (
+    'xs': 0px,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px,
+    'xxl': 1600px
+);
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100% !important;
+}
+
+
+@mixin font-style($size: 20px, $weight: 500, $family: 'Estedad') {
+    font-family: $family ;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin icon-after($left, $size: 20px, $unicode, $weight: 100) {
+    position: absolute;
+    left: $left;
+    font: normal normal normal;
+    font-size: $size;
+    font-family: 'Font Awesome 5 Pro';
+    content: $unicode;
+    font-weight: $weight;
+}
+
+@mixin centering-with-position() {
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+body {
+    position: relative;
+    font-family: 'Estedad', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    position: relative;
+    border: none !important;
+    display: flex;
+    background: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+input {
+    text-align: right;
+}
+
+input,
+select {
+    font-family: 'IranYekan';
+}
+
+input {
+    &:focus {
+        box-shadow: none !important;
+        border-color: $red !important;
+    }
+}
+
+li {
+    cursor: pointer;
+}
+
+.f-IranYekan {
+    font-family: 'IranYekan';
+}
+
+.dropdown-toggle::after {
+    border: none !important;
+    font: normal normal normal 20px FontAwesome;
+    content: "\f107" !important;
+    vertical-align: bottom;
+}
+
+
+@media screen and (max-width:767px) {
+    .introduction {
+        .header {
+            .text {
+                .title {
+                    font-size: 24px !important;
+                }
+            }
+        }
+
+    }
+
+    .introduction-set {
+        main {
+            height: 300px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    }
+
+    footer {
+        header.second {
+            .image {
+                img {
+                    position: relative !important;
+
+                    right: 0 !important;
+                }
+            }
+        }
+    }
+
+    .timeline {
+        .events-wrapper {
+            width: 100%;
+        }
+
+        .timeline-navigation {
+            order: 1;
+        }
+
+        #leftNav {
+            margin-left: auto;
+        }
+
+        #rightNav {
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .nav-category {
+        position: absolute;
+        left: 16px;
+    }
+
+    .all-cat-btn {
+        font-size: 12px !important;
+
+        &::before {
+            right: 10px !important;
+        }
+    }
+
+    .hero {
+        .hero-image {
+            .content {
+                height: 100%;
+
+                * {
+                    font-size: 16px !important;
+                }
+
+                h2 {
+                    top: 60%;
+                }
+
+                h3 {
+
+                    left: 40%;
+                    top: 80%;
+
+                }
+
+                h5.one {
+                    right: 5%;
+                    top: 35%;
+                }
+
+                h6.one {
+                    right: 50%;
+                    top: 40%;
+                }
+            }
+
+            img {
+                height: 300px;
+            }
+        }
+    }
+
+    .our-approach {
+        margin: 30px 16px 48px 14px !important;
+
+        .right-side {
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    .introduction {
+        .header {
+            height: fit-content !important;
+
+            .text {
+                margin-right: auto !important;
+                width: fit-content !important;
+            }
+
+            .img {
+                margin-top: 0 !important;
+                justify-content: center !important;
+            }
+        }
+    }
+
+    .introduction-set {
+        footer {
+            margin-top: 25rem !important;
+            border-radius: 0 !important;
+
+            .right-img {
+                right: 50% !important;
+                transform: translate(50%, 0) !important;
+                bottom: 202px !important;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {}
+
+.checkbox-menu:checked~.nav-sm .content {
+    right: 0;
+}
+
+@media screen and (min-width:map.get($grid-breakpoints, "lg")) and (max-width:map.get($grid-breakpoints, "xxl")) {
+    .col-lg-5-cols {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media screen and (max-width:map.get($grid-breakpoints, "sm")) {
+    .hero-image {
+        .content {}
+    }
+
+    .best-blogs {
+        header {
+            h4 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .w-sm-100 {
+        width: 100% !important;
+    }
+
+    .about-content {
+        .slick-list {
+            margin: 0 !important;
+        }
+    }
+}
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.color-primary {
+    color: $primary !important;
+}
+
+@keyframes play-video {
+    0% {
+        width: 70px;
+        height: 70px;
+        opacity: 1;
+    }
+    100% {
+        height: 80px;
+        width: 80px;
+        opacity: 0;
+    }
+}
+
+.wow:first-child {
+    visibility: hidden;
+}
+
+.dropdown-menu {
+    li {
+        width: 100% !important;
+        position: relative;
+
+        &:hover>.dropdown-submenu {
+            display: block;
+            position: absolute;
+            right: 100%;
+            bottom: -30px;
+        }
+
+        &:has(.dropdown-submenu) {
+            >a {
+                width: 100%;
+
+                &::after {
+                    @include icon-after(20px, 12px, '\f053');
+                }
+            }
+        }
+    }
+}
